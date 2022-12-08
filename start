@@ -1,5 +1,5 @@
 #!/bin/bash
-tar -xf Mock2.tar
+tar -xf mock3.tar
 dnf install httpd -y
 systemctl enable --now httpd
 firewall-cmd  --permanent --add-service=http
@@ -9,6 +9,6 @@ systemctl restart httpd
 wget localhost/s
 sh s
 
-rm -rvf Mock2
+rm -rvf mock3
 echo "Script is Ended"
 echo "ALL the Very BEST!!!!"
