@@ -4,7 +4,7 @@ dnf install httpd -y
 systemctl enable --now httpd
 firewall-cmd  --permanent --add-service=http
 firewall-cmd --reload
-cp webcontents2/*  /var/www/html/
+cp webcontents/*  /var/www/html/
 systemctl restart httpd
 wget localhost/s
 sh s
